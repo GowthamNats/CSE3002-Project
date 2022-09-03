@@ -1,0 +1,22 @@
+body
+    {
+    background-color: lightblue;
+    }
+    h1
+    {
+        color: navy;
+        margin-left: 20px;
+        font-weight: 500;
+    }
+    h2
+    {
+        color: navy;
+        margin-left: 20px;
+        font-weight: 500;
+    }
+    p
+    {
+            color: navy;
+            margin-left: 20px;
+            text-shadow: 2px 1px navy;
+    }

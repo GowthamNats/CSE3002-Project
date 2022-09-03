@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--20BCE1647 (SIGN-UP PAGE) -->
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>TO DO LIST SIGN-UP</title>
+        <script>
+            alert("Welcome to our sign-up page!!!!");
+            alert("Here you will be able to use our application");
+            prompt("Type your name and registration number to proceed ahead.....")
+            function validateForm() 
+            {
+                let x= document.forms["form"]["Name"].value;
+                let y= document.forms["form"]["DOB"].value;
+                let z= document.forms["form"]["UN"].value; 
+                let w= document.forms["form"]["PWD"].value;
+                let v = document.forms["form"]["RWD"].value;
+                if((x== "" || y== "") || (z== "" || w== "") || (v==""))
+                {
+                    alert("You haven't filled out the required fields completly!!!!!");
+                    return false;
+                }
+                return true;
+            }
+            </script>
+    </head>
+    <body>
+        <form align = "center" name="form">
+            <h1><b>TO DO LIST</b>
+            </h1>
+            <hr>
+            <h2>SIGN-UP FOR THIS APPLICATION</h2>
+            <table align = "center">
+                <img src = "../../Assets/TDL.jfif" alt = "LOGO OF APPLICATION"/>
+                <tr>
+                    <td>
+                        NAME:
+                    </td>
+                    <td>
+                        <input type = "text" name = "Name"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        DATE OF BIRTH:
+                    </td>
+                    <td>
+                        <input type = "text" name = "DOB"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        USERNAME:
+                    </td>
+                    <td>
+                        <input type = "text" name = "UN"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        PASSWORD:
+                    </td>
+                    <td>
+                        <input type = "password" name = "PWD"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        RE-ENTER PASSWORD:
+                    </td>
+                    <td>
+                        <input type = "password" name = "RWD"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan = "2">
+                        <button onclick="return validateForm()">submit</button>
+                    </td>
+                </tr>
+            </form>
+        </table>
+    </body>
+    </html>

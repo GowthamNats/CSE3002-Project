@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--20BCE1647 (LOGIN - PAGE) -->
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>TO DO LIST LOGIN</title>
+        <script>
+            alert("Welcome to our login page!!!!");
+            alert("Here you will be able to use our application");
+            prompt("Type your name and registration number to proceed ahead.....")
+            function validateForm() 
+            {
+                let z= document.forms["form"]["UN"].value; 
+                let w= document.forms["form"]["PWD"].value;
+                if((z== "" || w== ""))
+                {
+                    alert("You haven't filled out the required fields completly!!!!!");
+                    return false;
+                }
+                return true;
+            }
+            </script>
+    </head>
+    <body>
+        <form align = "center" name="form">
+            <h1><b>TO DO LIST</b>
+            </h1>
+            <hr>
+            <h2>LOGIN FOR THIS APPLICATION</h2>
+            <table align = "center">
+                <img src = "../../Assets/TDL1.jpg" alt = "LOGO OF APPLICATION"/>
+                <tr>
+                    <td>
+                        USERNAME:
+                    </td>
+                    <td>
+                        <input type = "text" name = "UN"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        PASSWORD:
+                    </td>
+                    <td>
+                        <input type = "password" name = "PWD"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan = "2">
+                        <a href = "file:///C:/Users/kabilan/OneDrive/Desktop/20BCE1647/ForgotPass.html?mail=&phone=">Forgot PASSWORD</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan = "2">
+                        <button onclick="return validateForm()">submit</button>
+                    </td>
+                </tr>
+            </form>
+        </table>
+    </body>
+    </html>
